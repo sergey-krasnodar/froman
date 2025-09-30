@@ -483,3 +483,71 @@
     cursor: pointer;
   }
 }
+
+.footer{
+  max-width: 375px;
+  margin: 0 auto;
+  padding: 80px 0;
+  background-color: vars.$color-accent;
+  &__inner{
+    text-align: center;
+    color: vars.$color-footer;
+  }
+  &__img{
+    margin: 0 auto;
+  }
+  &__list{
+    column-count: 2;
+    gap: 30px;
+    margin: 80px 0;
+  }
+  &__item + .footer__item{
+    margin-top: 40px;
+  }
+  &__item-link{
+    text-decoration: underline;
+    display: inline-block;
+    font-size: 18px;
+    line-height: 104%;
+  }
+  &__form{
+    margin-bottom: 80px;
+  }
+  &__form li + li{
+    margin-top: 40px;
+  }
+  &__form-text{
+    @extend %gilroy-300;
+    font-size: 19px;
+    line-height: 104%;
+  }
+  &__form-link{
+    @extend %gilroy-700;
+  }
+  &__form-link-email{
+    font-size: 23px;
+  }
+  &__form-link-phone{
+    font-size: 30px;
+  }
+  &__privacy{
+    font-size: 14px;
+    margin-bottom: 36px;
+    text-decoration: underline;
+  }
+  &__offer{
+    font-size: 14px;
+    margin-bottom: 32px;
+    text-decoration: underline;
+  }
+  &__social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 34px;
+  }
+  &__copy{
+    font-size: 14px;
+  }
+}
