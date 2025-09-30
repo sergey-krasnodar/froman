@@ -604,6 +604,7 @@
     &:hover {
       border-bottom: 3px solid vars.$color-main;
     }
+
   }
 
   &__item+.drop-down-menu__item {
@@ -628,10 +629,10 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.97);
   z-index: 10;
-  transition: all .2s;
 }
-.hidden{
+
+.hidden {
   visibility: hidden;
 }
