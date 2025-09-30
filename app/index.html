@@ -11,13 +11,503 @@
 <body>
 
   <header class="header">
-    header
+    <div class="header__inner">
+      <a class="header__logo-link" href="#">
+        <img class="header__logo-img" src="images/logo.svg" alt="Логотип">
+      </a>
+      <div class="header__box">
+        <a class="header__cart" href="#">
+          <img class="header__cart-img" src="images/cart.svg" alt="Корзина">
+          <span class="header__cart-num">3</span>
+        </a>
+        <button class="header__burger-menu">
+          <img class="header__burger-menu-img" src="images/burger-menu.svg" alt="Бургер меню">
+        </button>
+      </div>
+    </div>
   </header>
-  <main class="main">
-    main
-  </main>
+<main class="main">
+  <section class="top">
+    <div class="container">
+      <a class="top__link" href="#">
+        <div class="top__link-box">
+          <img class="top__link-img" src="images/arrow.svg" alt="Стрелка">
+        </div>
+        <span class="top__link-span">Главная</span>
+      </a>
+    </div>
+    <picture>
+      <source srcset="images/top-bg.avif" type="image/avif">
+      <source srcset="images/top-bg.webp" type="image/webp">
+      <img src="images/top-bg.png" alt="Фото">
+    </picture>
+    <div class="container top__center">
+      <h1 class="top__title">Ambassador</h1>
+      <p class="top__text">
+        Программа «Амбассадор» FROMAN<br>
+        Готовая бизнес-модель для амбициозных предпринимателей
+      </p>
+      <button class="top__btn" type="submit">
+        Отправить заявку
+      </button>
+    </div>
+  </section>
+  <section class="about">
+    <div class="container">
+      <div class="about__description">
+        <h2 class="about__description-title title-36">
+          Что такое программа «Амбассадор»?
+        </h2>
+        <p class="about__description-text">
+          Программа «Амбассадор» FROMAN – это уникальная возможность для предпринимателей зарабатывать на реализации
+          высококачественных кормов для животных. Участники получают право приобретать продукцию по цене
+          завода-производителя,
+          использовать бренд FROMAN и работать по готовой бизнес-модели.
+        </p>
+        <p class="about__description-text">
+          Мы обеспечиваем поддержку на всех этапах: от регистрации бизнеса до привлечения клиентов и масштабирования
+          продаж.
+        </p>
+      </div>
+    </div>
+    <picture>
+      <source srcset="images/about-bg.avif" type="image/avif">
+      <source srcset="images/about-bg.webp" type="image/webp">
+      <img src="images/about-bg.png" alt="Фото">
+    </picture>
+    <div class="container about__center">
+      <picture>
+        <source srcset="images/about-logo.avif" type="image/avif">
+        <source srcset="images/about-logo.webp" type="image/webp">
+        <img class="about__logo" src="images/about-logo.png" alt="Логотип">
+      </picture>
+      <h2 class="about__title-2 title-30">
+        Программа подходит для вас, если вы:
+      </h2>
+      <p class="about__text-2">
+        Хотите иметь стабильный и высокий доход.
+      </p>
+      <p class="about__text-2">
+        Готовы развивать свою команду и выстраивать систему продаж.
+      </p>
+      <p class="about__text-2">
+        Интересуетесь перспективным бизнесом с проверенной моделью.
+      </p>
+    </div>
+  </section>
+  <section class="advantages">
+    <div class="container">
+      <h2 class="advantages__title title-30">
+        Преимущества программы
+      </h2>
+      <ul class="advantages__inner">
+        <li class="advantages__item advantages__item-1">
+          <div class="advantages__item-box">
+            <h5 class="advantages__item-title">
+              Отсутствие конкурентов
+            </h5>
+            <p class="advantages__item-text">
+              Мы предлагаем уникальную бизнес-модель, не имеющую аналогов.
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item advantages__item-2">
+          <div class="advantages__item-box">
+            <h5 class="advantages__item-title">
+              Работа под известным брендом
+            </h5>
+            <p class="advantages__item-text">
+              Вы получаете право использовать торговую марку и фирменный стиль FROMAN.
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item advantages__item-3">
+          <div class="advantages__item-box">
+            <h5 class="advantages__item-title">
+              Высокий спрос на продукцию
+            </h5>
+            <p class="advantages__item-text">
+              Корма FROMAN уже известны владельцам собак, что упрощает привлечение клиентов.
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__item-box">
+            <h5 class="advantages__item-title">
+              Карьерный рост
+            </h5>
+            <p class="advantages__item-text">
+              Возможность развиваться до уровня главного Амбассадора региона и перейти к управленческой деятельности.
+            </p>
+          </div>
+        </li>
+        <li class="advantages__item">
+          <div class="advantages__item-box">
+            <h5 class="advantages__item-title">
+              Полная поддержка на всех этапах
+            </h5>
+            <p class="advantages__item-text">
+              Мы помогаем с регистрацией, бухгалтерией, рекламными материалами и маркетингом. Даже без опыта в продажах
+              вы
+              сможете
+              добиться успеха!
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="scheme">
+    <div class="container">
+      <h2 class="scheme__title title-36">
+        Схема работы
+      </h2>
+      <ul class="scheme__inner">
+        <li class="scheme__item">
+          <h5 class="scheme__item-title">
+            Подключение к обязательным системам
+          </h5>
+          <p class="scheme__item-text">
+            Под руководством специалистов FROMAN вы регистрируетесь в системах «Честный знак» и «Меркурий».
+          </p>
+        </li>
+        <li class="scheme__item">
+          <h5 class="scheme__item-title">
+            Закупка первой партии товара
+          </h5>
+          <p class="scheme__item-text">
+            Вы приобретаете стартовый ассортимент кормов по цене завода.
+          </p>
+        </li>
+        <li class="scheme__item">
+          <h5 class="scheme__item-title">
+            Доступ к уникальным инструментам
+          </h5>
+          <p class="scheme__item-text">
+            Вам предоставляется доступ к:
+            Специальному <span style="font-family: 'Gilroy-Bold', sans-serif">Telegram-боту</span> для обработки
+            заказов.
+            Маркетинговым материалам и стратегиям привлечения клиентов.
+          </p>
+        </li>
+        <li class="scheme__item">
+          <h5 class="scheme__item-title">
+            Хранение продукции
+          </h5>
+          <p class="scheme__item-text">
+            Выбираете удобный способ, соблюдая все необходимые требования к хранению продукции
+          </p>
+        </li>
+        <li class="scheme__item">
+          <h5 class="scheme__item-title">
+            Реализация товаров
+          </h5>
+          <p class="scheme__item-text">
+            Выбираете подходящий формат продаж: онлайн, офлайн или другие каналы (в рамках закона). Максимальная цена
+            фиксирована в
+            соглашении франшизы.
+          </p>
+        </li>
+        <li class="scheme__item">
+          <h5 class="scheme__item-title">
+            Получение прибыли
+          </h5>
+          <p class="scheme__item-text">
+            Вы зарабатываете от каждой продажи – вся выручка остается у вас!
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="warranty">
+    <div class="container">
+      <h2 class="warranty__title title-30">
+        Что мы гарантируем?
+      </h2>
+      <ul class="warranty__inner">
+        <li class="warranty__item">
+          <div class="warranty__item-box">
+            <h5 class="warranty__item-title">
+              Анализ рынка в вашем регионе
+            </h5>
+            <span class="warranty__item-text">
+              – мы оцениваем потенциальный спрос.
+            </span>
+          </div>
+        </li>
+        <li class="warranty__item">
+          <div class="warranty__item-box">
+            <h5 class="warranty__item-title">
+              Готовые схемы продаж
+            </h5>
+            <span class="warranty__item-text">
+              – подбираем стратегии сбыта в зависимости от вашей локации.
+            </span>
+          </div>
+        </li>
+        <li class="warranty__item">
+          <div class="warranty__item-box">
+            <h5 class="warranty__item-title">
+              Пошаговые инструкции
+            </h5>
+            <span class="warranty__item-text">
+              – четкий алгоритм действий для эффективной работы.
+            </span>
+          </div>
+        </li>
+        <li class="warranty__item">
+          <div class="warranty__item-box">
+            <h5 class="warranty__item-title">
+              Персональный Telegram-бот
+            </h5>
+            <span class="warranty__item-text">
+              – ваш личный инструмент для продаж.
+            </span>
+          </div>
+        </li>
+        <li class="warranty__item">
+          <div class="warranty__item-box">
+            <h5 class="warranty__item-title">
+              Финансовая безопасность
+            </h5>
+            <span class="warranty__item-text">
+              – если вы не реализуете товар за 3 месяца, мы выкупим его обратно по закупочной цене (за вычетом
+              доставки).
+            </span>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="partner">
+    <div class="container">
+      <picture>
+        <source srcset="images/top-bg.avif" type="image/avif">
+        <source srcset="images/top-bg.webp" type="image/webp">
+        <img class="partner__img" src="images/top-bg.png" alt="Фото">
+      </picture>
+      <h2 class="partner__title title-36">
+        Ожидания от партнеров
+      </h2>
+      <ul class="partner__inner">
+        <li class="partner__item">
+          <p class="partner__text">
+            Мы строим честный и взаимовыгодный бизнес и ожидаем от вас:
+          </p>
+        </li>
+        <li class="partner__item">
+          <p class="partner__text">
+            Добросовестного выполнения обязательств.
+            Следования принципу WIN-WIN – больше прибыли у вас, больше прибыли у нас.
+          </p>
+        </li>
+        <li class="partner__item">
+          <p class="partner__text">
+            Высоких стандартов общения с клиентами (приветливость, отзывчивость, пунктуальность).
+          </p>
+        </li>
+        <li class="partner__item">
+          <p class="partner__text">
+            Соблюдения законодательства в сфере продаж.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="become">
+    <div class="container">
+      <h2 class="become__title title-30">
+        Как стать Амбассадором?
+      </h2>
+      <ul class="become__inner">
+        <li class="become__item">
+          <img class="become__check" src="images/check-bold.svg" alt="Галочка">
+          <h5 class="become__item-title">
+            Выполнить базовые требования
+          </h5>
+          <p class="become__item-text">
+            Желание развиваться в перспективной нише.
+            Готовность работать по стандартам FROMAN.
+            Опыт в продажах – приветствуется, но не обязателен.
+          </p>
+        </li>
+        <li class="become__item">
+          <img class="become__check" src="images/check-bold.svg" alt="Галочка">
+          <h5 class="become__item-title">
+            Вложить минимальные инвестиции
+          </h5>
+          <p class="become__item-text">
+            Регистрация ИП – бесплатно через
+            Т-банк или налоговую.
+          </p>
+          <p class="become__item-text">
+            Получение ЭЦП – от 1500 руб.
+            Регистрация «Честный знак» – 5500 руб.
+            Регистрация «Меркурий» – 5500 руб.
+            Кассовое оборудование и сканер – 25 000 руб.
+            Первая закупка товара – от 450 000 руб.
+            Пашуальный взнос 50 000 руб.
+            Аренда склада (от 20 м²) – стоимость зависит от региона.
+          </p>
+        </li>
+        <li class="become__item">
+          <img class="become__check" src="images/check-bold.svg" alt="Галочка">
+          <h5 class="become__item-title become__item-title-work">
+            Начать
+            зарабатывать!
+          </h5>
+          <span class="become__item-span-1">40%</span>
+          <span class="become__item-span-2">
+            Ваш доход от закупочной цены товара. Чем активнее вы развиваетесь, тем выше ваша прибыль.
+          </span>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="fee">
+    <div class="container">
+      <h2 class="fee__title title-36">
+        Что входит в паушальный взнос?
+      </h2>
+      <ul class="fee__inner">
+        <li class="fee__item">
+          <div class="fee__item-top">
+            <img class="fee__item-img" src="images/check-bold.svg" alt="Галочка">
+            <h5 class="fee__item-title">
+              Управленческий пакет:
+            </h5>
+          </div>
+          <ul class="fee__item-list">
+            <li class="fee__item-point">
+              Пошаговое руководство по открытию ИП (с инструкциями и образцами документов)
+            </li>
+            <li class="fee__item-point">
+              Инструкция по регистрации и работе в системе "Меркурий"
+            </li>
+            <li class="fee__item-point">
+              Инструкция по регистрации и работе в системе "Честный Знак"
+            </li>
+            <li class="fee__item-point">
+              Готовые решения по управленческому учету (шаблоны отчетов, финансовые модели)
+            </li>
+            <li class="fee__item-point">
+              Рекомендации по оптимизации бизнес-процессов и автоматизации
+            </li>
+          </ul>
+        </li>
+        <li class="fee__item">
+          <div class="fee__item-top">
+            <img class="fee__item-img" src="images/check-bold.svg" alt="Галочка">
+            <h5 class="fee__item-title">
+              Маркетинговый пакет:
+            </h5>
+          </div>
+          <ul class="fee__item-list">
+            <li class="fee__item-point">
+              Полный комплект брендированных материалов (буклеты, флаеры, оформление соцсетей, визитки, фирменный стиль)
+            </li>
+            <li class="fee__item-point">
+              Доступ к рекламным кампаниям и маркетинговым материалам (баннеры, видео, шаблоны объявлений)
+            </li>
+            <li class="fee__item-point">
+              SMM- и PR-поддержка (разработка контента, стратегии продвижения, публикации)
+            </li>
+            <li class="fee__item-point">
+              Готовые скрипты продаж для работы с клиентами (разговорные модели, обработка возражений)
+            </li>
+            <li class="fee__item-point">
+              Сценарии промо-акций и мероприятий (идеи, инструкции по проведению)
+            </li>
+            <li class="fee__item-point">
+              Готовые презентации и коммерческие предложения (универсальные и адаптируемые шаблоны)
+            </li>
+            <li class="fee__item-point">
+              Автоматизированные воронки продаж (email-маркетинг, мессенджеры)
+            </li>
+            <li class="fee__item-point">
+              Чат-бот для автоматизации маркетинга и общения с клиентами
+            </li>
+            <li class="fee__item-point">
+              Доступ к внутренней базе знаний по маркетингу и продажам
+            </li>
+          </ul>
+        </li>
+        <li class="fee__item">
+          <div class="fee__item-top">
+            <img class="fee__item-img" src="images/check-bold.svg" alt="Галочка">
+            <h5 class="fee__item-title">
+              Образовательный пакет:
+            </h5>
+          </div>
+          <ul class="fee__item-list">
+            <li class="fee__item-point">
+              Экспертное обучение по ассортименту продукции (видеоуроки, обучающие материалы)
+            </li>
+            <li class="fee__item-point">
+              Вебинары и мастер-классы по использованию маркетинговых инструментов
+            </li>
+            <li class="fee__item-point">
+              Обучение работе в системах "Меркурий" и "Честный Знак" (интерактивные инструкции, практика)
+            </li>
+            <li class="fee__item-point">
+              Консультации с кураторами и наставниками по ведению бизнеса
+            </li>
+            <li class="fee__item-point">
+              Доступ к закрытому сообществу франчайзи для обмена опытом и поддержкой
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <section class="application">
+    <div class="container">
+      <picture>
+        <source srcset="images/footer-logo.avif" type="image/avif">
+        <source srcset="images/footer-logo.webp" type="image/webp">
+        <img class="application__img" src="images/footer-logo.png" alt="Логотип">
+      </picture>
+      <h2 class="application__title">
+        Будьте Амбассадором FROMAN и зарабатывайте на продаже премиальных кормов для собак!
+      </h2>
+      <form class="application__form">
+        <ul class="application__list">
+          <li class="application__item">
+            <p class="application__text">
+              Фамилия И.О
+            </p>
+            <input class="application__input" type="name" placeholder="Фамилия И.О">
+          </li>
+          <li class="application__item">
+            <p class="application__text">
+              Город проживания
+            </p>
+            <input class="application__input" type="text" placeholder="Город проживания">
+          </li>
+          <li class="application__item">
+            <p class="application__text">
+              Номер телефона
+            </p>
+            <input class="application__input" type="phone" placeholder="Номер телефона">
+          </li>
+          <li class="application__item">
+            <p class="application__text">
+              Email
+            </p>
+            <input class="application__input" type="email" placeholder="Email">
+          </li>
+          <li class="application__item">
+            <button class="application__btn" type="submit">
+              Отправить заявку
+            </button>
+          </li>
+        </ul>
+      </form>
+    </div>
+  </section>
+</main>
  <footer class="footer">
-   footer
+   
  </footer>
 
 
