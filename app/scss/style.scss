@@ -4,9 +4,11 @@
 @use 'global';
 
 .header {
+  position: sticky;
   margin: 0 auto;
   max-width: 375px;
   background-color: vars.$color-accent;
+  z-index: 10;
 
   &__inner {
     min-height: 80px;
@@ -55,6 +57,7 @@
 .top {
   padding: 18px 0 60px;
   background-color: vars.$color-primary;
+  position: relative;
 
   &__link {
     @extend %gilroy-500;
@@ -77,7 +80,8 @@
     width: 30px;
     height: 30px;
   }
-  &__link-img{
+
+  &__link-img {
     margin-right: 2px;
   }
 
@@ -390,30 +394,36 @@
     box-shadow: 0px 4px 26.3px 0px #2A74D491;
     padding: 20px 14px 20px 7px;
   }
-  &__item + .fee__item{
+
+  &__item+.fee__item {
     margin-top: 20px;
   }
-  &__item-top{
+
+  &__item-top {
     display: flex;
     gap: 7px;
     align-items: center;
     margin-bottom: 8px;
   }
-  &__item-title{
+
+  &__item-title {
     @extend %gilroy-700;
     font-size: 20px;
     line-height: 137%;
     color: #000;
   }
-  &__item-list{
+
+  &__item-list {
     font-size: 16px;
     line-height: 137%;
     color: #000;
   }
-  &__item-point{
+
+  &__item-point {
     padding-left: 25px;
     position: relative;
-    &::before{
+
+    &::before {
       content: "";
       position: absolute;
       width: 4px;
@@ -426,13 +436,15 @@
   }
 }
 
-.application{
+.application {
   padding: 60px 0;
   background-color: vars.$color-main;
-  &__img{
+
+  &__img {
     margin: 0 auto;
   }
-  &__title{
+
+  &__title {
     color: #fff;
     @extend %gilroy-700;
     font-size: 20px;
@@ -440,20 +452,22 @@
     text-align: center;
     margin: 30px 0;
   }
-  &__form{
+
+  &__form {
     color: #fff;
   }
- 
-  &__list li + li{
+
+  &__list li+li {
     margin-top: 14px;
   }
-  
-  &__text{
+
+  &__text {
     margin-bottom: 4px;
     padding-left: 18px;
     font-size: 14px;
   }
-  &__input{
+
+  &__input {
     background-color: transparent;
     width: 100%;
     border: 1px solid #fff;
@@ -464,11 +478,13 @@
     color: #fff;
     opacity: 0.6;
     outline: none;
-    &::placeholder{
+
+    &::placeholder {
       color: #fff;
     }
   }
-  &__btn{
+
+  &__btn {
     margin-top: 30px;
     padding: 12px;
     background-color: #fff;
@@ -484,70 +500,138 @@
   }
 }
 
-.footer{
+.footer {
   max-width: 375px;
   margin: 0 auto;
   padding: 80px 0;
   background-color: vars.$color-accent;
-  &__inner{
+
+  &__inner {
     text-align: center;
     color: vars.$color-footer;
   }
-  &__img{
+
+  &__img {
     margin: 0 auto;
   }
-  &__list{
+
+  &__list {
     column-count: 2;
     gap: 30px;
     margin: 80px 0;
   }
-  &__item + .footer__item{
+
+  &__item+.footer__item {
     margin-top: 40px;
   }
-  &__item-link{
+
+  &__item-link {
     text-decoration: underline;
     display: inline-block;
     font-size: 18px;
     line-height: 104%;
   }
-  &__form{
+
+  &__form {
     margin-bottom: 80px;
   }
-  &__form li + li{
+
+  &__form li+li {
     margin-top: 40px;
   }
-  &__form-text{
+
+  &__form-text {
     @extend %gilroy-300;
     font-size: 19px;
     line-height: 104%;
   }
-  &__form-link{
+
+  &__form-link {
     @extend %gilroy-700;
   }
-  &__form-link-email{
+
+  &__form-link-email {
     font-size: 23px;
   }
-  &__form-link-phone{
+
+  &__form-link-phone {
     font-size: 30px;
   }
-  &__privacy{
+
+  &__privacy {
     font-size: 14px;
     margin-bottom: 36px;
     text-decoration: underline;
   }
-  &__offer{
+
+  &__offer {
     font-size: 14px;
     margin-bottom: 32px;
     text-decoration: underline;
   }
-  &__social{
+
+  &__social {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
     margin-bottom: 34px;
   }
-  &__copy{
+
+  &__copy {
     font-size: 14px;
   }
+}
+
+.drop-down-menu {
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  transform: translateY(-600px);
+  transition: all .5s;
+
+  &__list {
+    width: 345px;
+  }
+
+  &__item {
+    background-color: vars.$color-accent;
+    width: 100%;
+    border-radius: 20px;
+
+    &:hover {
+      border-bottom: 3px solid vars.$color-main;
+    }
+  }
+
+  &__item+.drop-down-menu__item {
+    margin-top: 5px;
+  }
+
+  &__link {
+    padding: 20px;
+    color: vars.$color-footer;
+  }
+}
+
+.drop-down-menu--active {
+  transform: translateY(0);
+  transition: all .5s;
+  z-index: 10;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+  transition: all .2s;
+}
+.hidden{
+  visibility: hidden;
 }
